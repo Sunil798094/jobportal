@@ -1,1 +1,162 @@
-<p>registration works!</p>
+<!-- <section class="h-100 bg-white">
+    <div class="container py-5 h-100">
+        <div class="row d-flex justify-content-center align-items-center h-100">
+            <div class="col">
+                <div class="card card-registration my-4">
+                    <div class="row g-0">
+                        <div class="col-xl-6 d-none d-xl-block">
+                            <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-registration/img4.webp"
+                                alt="Sample photo" class="img-fluid"
+                                style="border-top-left-radius: .25rem; border-bottom-left-radius: .25rem;" />
+                        </div>
+                        <div class="col-xl-6">
+                            <div class="card-body p-md-5 text-black">
+                                <h3 class="mb-5 text-uppercase">Registration</h3>
+
+                                <div class="row">
+                                    <div class="col-md-6 mb-4">
+                                        <div class="form-outline">
+                                            <input type="text" id="form3Example1m"
+                                                class="form-control form-control-lg" />
+                                            <label class="form-label" for="form3Example1m">Company Name</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 mb-4">
+                                        <div class="form-outline">
+                                            <input type="text" id="form3Example1n"
+                                                class="form-control form-control-lg" />
+                                            <label class="form-label" for="form3Example1n">GST No</label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-md-6 mb-4">
+                                        <div class="form-outline">
+                                            <input type="text" id="form3Example1m1"
+                                                class="form-control form-control-lg" />
+                                            <label class="form-label" for="form3Example1m1">Email</label>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-6 mb-4">
+                                        <div class="form-outline">
+                                            <input type="text" id="form3Example1n1"
+                                                class="form-control form-control-lg" />
+                                            <label class="form-label" for="form3Example1n1">Mobile No</label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="form-outline mb-4">
+                                    <input type="text" id="form3Example97" class="form-control form-control-lg" />
+                                    <label class="form-label" for="form3Example97">Company Logo Url</label>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-md-6 mb-4">
+                                        <div class="form-outline">
+                                            <input type="text" id="form3Example1m1"
+                                                class="form-control form-control-lg" />
+                                            <label class="form-label" for="form3Example1m1">State</label>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-6 mb-4">
+                                        <div class="form-outline">
+                                            <input type="text" id="form3Example1n1"
+                                                class="form-control form-control-lg" />
+                                            <label class="form-label" for="form3Example1n1">City</label>
+                                        </div>
+                                    </div>
+
+
+
+                                    <div class="form-outline mb-4">
+                                        <input type="text" id="form3Example90" class="form-control form-control-lg" />
+                                        <label class="form-label" for="form3Example90">Pincode</label>
+                                    </div>
+
+
+                                    <div class="form-outline mb-4">
+                                        <input type="text" id="form3Example8" class="form-control form-control-lg" />
+                                        <label class="form-label" for="form3Example8">Address</label>
+                                    </div>
+
+                                    <div class="d-flex justify-content-end pt-3">
+                                        <button type="button" class="btn btn-success">Register</button>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+
+        <section class="h-100 h-custom">
+            <div class="container py-1 h-100">
+              <div class="row d-flex justify-content-center align-items-center h-100">
+                <div class="col-lg-8 col-xl-6">
+                  <div class="card rounded-3">
+                    <div class="card-body p-4 p-md-5">
+                      <h3 class="mb-1 pb-2 pb-md-0 px-md-2 text-center">Registration</h3>
+                      <form class="px-md-2">
+                        <div class="form-outline mb-1">
+                          <input type="text" id="companyName" [(ngModel)] ="employerobj.CompanyName" name ="CompanyName"  class="form-control" />
+                          <label class="form-label" for="companyName">Company Name</label>
+                        </div>
+                        <div class="form-outline mb-1">
+                          <input type="email" id="email" [(ngModel)] ="employerobj.EmailId" name ="EmailId" class="form-control" />
+                          <label class="form-label" for="email">Email</label>
+                        </div>
+                        <div class="form-outline mb-1">
+                          <input type="tel" id="mobileNumber" [(ngModel)] ="employerobj.MobileNo" name ="MobileNo" class="form-control" />
+                          <label class="form-label" for="mobileNumber">Mobile Number</label>
+                        </div>
+                        <div class="form-outline mb-1">
+                          <input type="text" id="phone" [(ngModel)] ="employerobj.PhoneNo" name ="PhoneNo" class="form-control" />
+                          <label class="form-label" for="phone">Phone</label>
+                        </div>
+                        <div class="form-outline mb-1">
+                          <input type="text" id="logoUrl" [(ngModel)] ="employerobj.LogoURL" name ="LogoURL" class="form-control" />
+                          <label class="form-label" for="logoUrl">Company Logo Url</label>
+                        </div>
+                        <div class="form-outline mb-1">
+                          <input type="text" id="gstNumber" [(ngModel)] ="employerobj.GstNo" name ="GstNo" class="form-control" />
+                          <label class="form-label" for="gstNumber">GST Number</label>
+                        </div>
+                        <div class="row">
+                          <div class="col-md-6 mb-1">
+                            <div class="form-outline">
+                              <input type="text" id="city" [(ngModel)] ="employerobj.City" name ="City" class="form-control" />
+                              <label class="form-label" for="city">City</label>
+                            </div>
+                          </div>
+                          <div class="col-md-6 mb-1">
+                            <div class="form-outline">
+                              <input type="text" id="state" [(ngModel)] ="employerobj.State" name ="State" class="form-control" />
+                              <label class="form-label" for="state">State</label>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="form-outline mb-1">
+                          <input type="text" id="pinCode" [(ngModel)] ="employerobj.PinCode" name ="PinCode" class="form-control" />
+                          <label class="form-label" for="pinCode">Pin Code</label>
+                        </div>
+                        <div class="form-outline mb-1">
+                          <textarea id="address" [(ngModel)] ="employerobj.CompanyAddress" name ="CompanyAddress" class="form-control"></textarea>
+                          <label class="form-label" for="address">Address</label>
+                        </div>
+                        <div class="text-center">
+                          <button type="button" (click)="register()"  class="btn btn-primary">Register</button>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          

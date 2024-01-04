@@ -11,7 +11,10 @@ import { MyJobsComponent } from './pages/my-jobs/my-jobs.component';
 import { NotFoundComponent } from './pages/not-found/not-found.component';
 import { RegistrationComponent } from './pages/registration/registration.component';
 import { LoginComponent } from './pages/login/login.component';
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms'
 
+ 
 @NgModule({
   declarations: [
     AppComponent,
@@ -27,7 +30,9 @@ import { LoginComponent } from './pages/login/login.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
