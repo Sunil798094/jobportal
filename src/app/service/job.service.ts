@@ -7,11 +7,13 @@ import { Injectable } from '@angular/core';
 export class JobService {
 
 
-  apiEndPoint : string ='https://freeapi.miniprojectideas.com/api/JobPortal/'
+  apiUrl : string ='https://freeapi.miniprojectideas.com/api/JobPortal/'
   constructor(private  http: HttpClient) { }
      registerEmployer(obj :any){
-      return this.http.post( this.apiEndPoint + 'AddNewEmployer',obj)
+      return this.http.post( this.apiUrl + 'AddNewEmployer',obj)
      }
 
-     
+     registerAsJobSeeker(obj :any){
+      return this.http.post( this.apiUrl + 'AddNewJobSeeker',obj)
+     }
 }

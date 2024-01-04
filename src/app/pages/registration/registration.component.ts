@@ -22,6 +22,16 @@ employerobj :any = {
   "GstNo": ""
 }
 
+jobSeekerObj :any = {
+  "JobSeekerId": 0,
+  "FullName": "",
+  "EmailId": "",
+  "MobileNo": "",
+  "ExperienceStatus": "",
+  "ResumeUrl": "",
+}
+
+isJobSeeker :boolean =true;
 constructor(private job:JobService){}
      register(){
         this.job.registerEmployer(this.employerobj).subscribe((res:any)=>{
@@ -32,6 +42,16 @@ constructor(private job:JobService){}
           }
         })
 
+     }
+
+     registerAsJobSeeker(){
+      this.job.registerAsJobSeeker(this.jobSeekerObj).subscribe((res:any)=>{
+        if(res.result){
+          alert(res.message)
+        } else {
+          alert(res.message)
+        }
+      })
      }
 
 }
