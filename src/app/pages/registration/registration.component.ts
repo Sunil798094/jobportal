@@ -30,7 +30,7 @@ jobSeekerObj :any = {
   "ExperienceStatus": "",
   "ResumeUrl": "",
   "JobSeekerSkills":[],
-  "JobSeekerWorkExperiences":[]
+  "JobSeekerWorkExperiences":[],
 }
 
 isJobSeeker :boolean =true;
