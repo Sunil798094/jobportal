@@ -16,4 +16,7 @@ export class JobService {
      registerAsJobSeeker(obj :any){
       return this.http.post( this.apiUrl + 'AddNewJobSeeker',obj)
      }
+     login(obj :any){
+      return this.http.post( this.apiUrl + 'login',obj)
+     }
 }
