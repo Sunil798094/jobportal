@@ -11,12 +11,12 @@ import { MyJobsComponent } from './pages/my-jobs/my-jobs.component';
 import { JobsComponent } from './pages/jobs/jobs.component';
 
 const routes: Routes = [
-  {path:'', component:HomeComponent},
+ {path:'', component:HomeComponent},
  {path:'home', component : HomeComponent},
  {path:'login', component : LoginComponent},
  {path:'registration',component: RegistrationComponent},
  {path:'jobs', component: JobsComponent},
- {path: 'job-details', component:JobDetailsComponent},
+ {path: 'job-details/:jobid', component:JobDetailsComponent},
  {path: 'new-job', component:CreateNewJobComponent},
  {path:'job-listing', component:JobListingComponent},
  {path:'my-jobs', component:MyJobsComponent},

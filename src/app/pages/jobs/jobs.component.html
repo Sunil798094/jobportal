@@ -1,5 +1,5 @@
-<div class="container-fluid body-background">
-    <div class="container pt-3 ">
+
+    <div class="container-fluid pt-3 ">
         <div class="row">
             <div class="col-3 filter">
                 <div class="card">
@@ -9,40 +9,39 @@
                 </div>
             </div>
             <div class="col-6  job">
-                <div class="row">
+                <div class="row pt-2" *ngFor="let job of jobList">
                     <div class="col-12">
                         <div class="card">
                             <div class="card-body">
-                                <a href="job-detail.html">
-                                    <div class="row">
+                               
+                                    <div class="row" (click)="openJob(job.jobId)">
                                         <div class="col-8">
                                             <div class="row">
                                                 <div class="col-12">
-                                                    <h6 style="margin-bottom: 0;">Java Full Stack Developer ! 5+ YRS
-                                                    </h6>
-                                                    <a>Ford</a>
+                                                    <h6 style="margin-bottom: 0;">{{job.jobName}}</h6>
+                                                    <a>{{job.companyName}}</a>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="col-4 text-end">
-                                            <img class="compo_logo" src="/images/247012.png" alt="">
+                                            <img class="compo_logo" [src]="job.logoUrl" alt="">
                                         </div>
                                     </div>
                                     <div class="row">
                                         <div class="col-4">
-                                            <i class="fa fa-suitcase" aria-hidden="true"></i> 1-2 Years
+                                            <i class="fa fa-suitcase" aria-hidden="true"></i> {{job.experience}}
                                         </div>
                                         <div class="col-4">
-                                            <i class="fa fa-inr" aria-hidden="true"></i> 3-5 Lacs
+                                            <i class="fa fa-inr" aria-hidden="true"></i> {{job.package}}
                                         </div>
                                         <div class="col-4">
-                                            <i class="fa fa-map-marker" aria-hidden="true"></i> Pune
+                                            <i class="fa fa-map-marker" aria-hidden="true"></i> {{job.location}}
                                         </div>
                                     </div>
                                     <div class="row pt-1">
                                         <div class="col-12">
                                             <i class="fa fa-file-text-o" aria-hidden="true"></i> <span
-                                                class="text-muted"> Bachelors or Master s Degree in Computer Science or
+                                                class="text-muted"> {{job.jobName|slice:0-10}}
                                                 ...</span>
                                         </div>
                                     </div>
@@ -54,13 +53,10 @@
                                             <i class="fa fa-bookmark" aria-hidden="true"></i>
                                         </div>
                                     </div>
-
-
-                                </a>
                             </div>
                         </div>
                     </div>
-                    <div class="row pt-2">
+                    <!-- <div class="row pt-2">
                         <div class="col-12">
                             <div class="card">
                                 <div class="card-body">
@@ -255,7 +251,7 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
                 <div class="col-3 filter">
                     <div class="card">
@@ -267,4 +263,4 @@
             </div>
         </div>
 
-    </div>
+   
